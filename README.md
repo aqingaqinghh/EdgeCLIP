@@ -1,24 +1,22 @@
-# Delving into Shape-aware Zero-shot Semantic Segmentation
+# EdgeCLIP: Injecting Edge-Awareness into Visual-Language Models for Zero-Shot Semantic Segmentation
 
-Xinyu Liu, Beiwen Tian, Zhen Wang, Rui Wang, Kehua Sheng, Bo Zhang, Hao Zhao, Guyue Zhou
+Jiaxiang Fang, Shiqiang Ma, Guihua Duan, Fei Guo, Shengfeng He
 
-Paper Accepted to CVPR 2023.
-
-![Alt text](./main.png)
+![Alt text](./model.png)
 
 
 Thanks to the impressive progress of large-scale vision-language pretraining, recent recognition models can classify arbitrary objects in a zero-shot and open-set manner,with a surprisingly high accuracy. However, translating this success to semantic segmentation is not trivial, because this dense prediction task requires not only accurate semantic understanding but also fine shape delineation and existing vision-language models are trained with image-level language descriptions. To bridge this gap, we pursue shape-aware zero-shot semantic segmentation in this study. Inspired by classical spectral methods in the image segmentation literature, we propose to leverage the eigenvectors of Laplacian matrices constructed with self-supervised pixel-wise features to promote shape-awareness. Despite that this simple and effective technique does not make use of the masks of seen classes at all, we demonstrate that it outperforms a state-of-the-art shape-aware formulation that aligns ground truth and predicted edges during training. We also delve into the performance gains achieved on different datasets using different backbones and draw several interesting and conclusive observations: the benefits of promoting shape-awareness highly relates to mask compactness and language embedding locality. Finally, our method sets new state-of-the-art performance for zero-shot semantic segmentation on both Pascal and COCO, with significant margins. 
    
 ## Installation
 
-### Requirements
-   torch=1.7.1
+### 📘 Environment
+   - python == 3.9.13
 
-   torchvision=0.8.2 
+   torch == 1.13.0
 
-   clip=1.0
+   torchvision=0.14.0 
 
-   timm=0.4.12
+   cuda == 11.6
 
 
 ### Data preparation
