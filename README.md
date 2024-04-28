@@ -16,7 +16,7 @@ Jiaxiang Fang, Shiqiang Ma, Guihua Duan, Fei Guo, Shengfeng He
 
    - torch == 1.13.0
 
-   - torchvision=0.14.0 
+   - torchvision == 0.14.0 
 
    - cuda == 11.6
 
